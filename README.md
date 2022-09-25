@@ -32,7 +32,7 @@ if We Crouch and jump we play different animation to smoother Gameplay.
  When the FireButton is pressed The FireWeapon function is called: <br />
  ![image](https://user-images.githubusercontent.com/88790441/192152757-f130d562-a40d-4f06-ae9c-77f2053433ce.png) <br />
  but what happenned behined the scene? <br />
- ![image](https://user-images.githubusercontent.com/88790441/192152867-62f21a2f-89f7-4627-a1f9-cef2bbcdb8b0.png)
+ ![image](https://user-images.githubusercontent.com/88790441/192152867-62f21a2f-89f7-4627-a1f9-cef2bbcdb8b0.png)<br />
 The FireWeapon function will first check if Can fire our weapon by checking that we are not reloading (ECombatState), and checking that our current equipped gun have ammo using the WeaponHasAmmo() function. <br />
 In case we Can fire the bullet The function will do several things: <br />
 Play the fire sound. <br />
