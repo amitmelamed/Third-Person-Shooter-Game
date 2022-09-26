@@ -1,7 +1,9 @@
 # Shooter
-Welcome to my 3rd Person Shooter Game project!
-*Disclaimer*
-The project is NOT YET FINISHED!
+Welcome to my 3rd Person Shooter Game project!  
+*Disclaimer*  
+The project is NOT YET FINISHED!  
+This project is part of the curse "Unreal Engine C++ The Ultimate Shooter Course" created by Stephen Ulibarri.  
+Big shoutout to to Stephen, you realy helped me to push my programing skills to another level.
 
 ![image](https://user-images.githubusercontent.com/88790441/192151889-b10b5bf4-ab54-450a-b41e-d6558a0e70d7.png)  
 
@@ -57,7 +59,30 @@ Is the Player crouching?
 Is the Player Aiming?
 Is the Player Just Shot the weapon?  
 By all of this parameters we calculate the crosshair spread using CalculateCrosshairSpread function, that is called every frame by the Tick function.<br />
-![image](https://user-images.githubusercontent.com/88790441/192154017-0a854ab7-80e7-44fe-a989-625b4bb8eda3.png)
+![image](https://user-images.githubusercontent.com/88790441/192154017-0a854ab7-80e7-44fe-a989-625b4bb8eda3.png)  
+# Hip Turn System
+When we are standing still (Same this implemented to crouching) and turn around, we dont want our feet to slide.  
+For that reason we implemented a system that turn the upper body, and while the body get to a certein degree compare to the lower body, we are playing a turn in place animaiton.  
+![image](https://user-images.githubusercontent.com/88790441/192259142-91807d2c-db62-4a7e-9a15-fffd7686819b.png)
+<br />
+![image](https://user-images.githubusercontent.com/88790441/192259441-cb94b5d1-1885-4471-aa5c-3e803573f022.png)
+<br />
+In those picture we can see the different angles between the upper body (that pointed where we are aiming at), and the lower body that standing still.  
+# Weapon pointing direction.
+In case we are aiming or not, the weapon is pointing in the direction we are aiming at.  
+![image](https://user-images.githubusercontent.com/88790441/192260339-be7d5a3b-4fba-49fc-88a4-87c52adf7df8.png)  ![image](https://user-images.githubusercontent.com/88790441/192260608-90aa05f6-ee65-4ff2-923c-58cc61506773.png)  
+# Walking System
+While we are walking to a different direction, we are blending between different animaiton.  
+each animation is different depends on the walking direction.  
+All of the walking animation in this specipic blendspace is blending just the lower body, becasuse we want to still be able to use our upper body animations such as reloading, aiming offsets, fire animaiton and more.  
+Same thing is applied to crouching system.
+
+# Strifing
+If we are walking and moving the Camera to a certein direction, we are blending a strifing animation that make are turn realisticly.  
+![image](https://user-images.githubusercontent.com/88790441/192262396-97c3bdb1-7917-46e3-99af-25cdd6d86140.png)
+
+
+
 
 
 
