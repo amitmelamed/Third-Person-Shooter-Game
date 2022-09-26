@@ -75,7 +75,8 @@ In case we are aiming or not, the weapon is pointing in the direction we are aim
 While we are walking to a different direction, we are blending between different animaiton.  
 each animation is different depends on the walking direction.  
 All of the walking animation in this specipic blendspace is blending just the lower body, becasuse we want to still be able to use our upper body animations such as reloading, aiming offsets, fire animaiton and more.  
-Same thing is applied to crouching system.
+Same thing is applied to crouching system.  
+When we stop walking, we will play a stop walking animation, and then return to Idle pose.
 
 # Strifing
 If we are walking and moving the Camera to a certein direction, we are blending a strifing animation that make are turn realisticly.  
